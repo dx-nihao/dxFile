@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css表格样式</title>
+		<style>
+			#customers{
+				font-family: Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			#customers td, #customers th{
+				border: :0.0625rem,solid #ddd;
+				padding: 0.5rem;
+			}
+			#customers tr:nth-child(even){background-color: #f2f2f2;}
+			#customers tr:hover {background-color: #ddd;}
+			#customers th{
+				padding-top: 0.75rem;
+				padding-bottom: 0.75rem;
+				text-align: left;
+				background-color: #4caf50;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="customers">
+		<tr>
+			<th>Comany</th>
+			<th>Contact</th>
+			<th>Adress</th>
+			<th>City</th>
+		</tr>
+		<tr>
+			<td>Alibaba</td>
+			<td>Ma Yun</td>
+			<td>No. 699, Wangshang Road, Binjiang District</td>
+			<td>HangZhou</td>
+		</tr>
+		<tr>
+			<td>APPLE</td>
+			<td>Tim Cook</td>
+			<td>1 Infinite Loop Cupertino, CA 95014</td>
+			<td>Cupertino</td>
+		</tr>
+		<tr>
+			<td>BAIDU</td>
+			<td>Tsuneji Uchida</td>
+			<td>One Canon Plaza Lake Success, NY 11042</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Google</td>
+			<td>Larry Page</td>
+			<td>1600 Amphitheatre Parkway Mountain View, CA 94043</td>
+			<td>Mountain View</td>
+		</tr>
+		<tr>
+			<td>Mountain View</td>
+			<td>Ren Zhengfei</td>
+			<td>Putian Huawei Base, Longgang District</td>
+			<td>Shenzhen</td>
+		</tr>
+		<tr>
+			<td>Microsoft</td>
+			<td>Bill Gates</td>
+			<td>15700 NE 39th St Redmond, WA 98052</td>
+			<td>Redmond</td>
+		</tr>
+		<tr>
+			<td>Nokia</td>
+			<td>Olli-Pekka Kallasvuo</td>
+			<td>P.O. Box 226, FIN-00045 Nokia Group</td>
+			<td>Helsinki</td>
+		</tr>
+		<tr>
+			<td>SONY</td>
+			<td>Kazuo Hirai</td>
+			<td>Park Ridge, NJ 07656</td>
+			<td>Park Ridge</td>
+		</tr>
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>SONY</td>
+			<td>Kazuo Hirai</td>
+			<td>Park Ridge, NJ 07656</td>
+			<td>Park Ridge</td>
+		</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- <p>对每个数组元素执行函数来创建数组。</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var numbers1=[45,4,9,16,25];
+			var numbers2=numbers1.map(myFunction);
+			
+			document.getElementById("demo").innerHTML=numbers2;
+			
+			function myFunction(value){
+				return value*2;
+			}
+		</script> -->
+
+		<!-- <h1>JavaScript数组排序</h1>
+
+		<p>单击按钮以升序进行排序</p>
+		<button onclick="myFunction()">试一试</button>
+		<p id="demo"></p>
+
+		<script type="text/javascript">
+			var points = [28, 43, 1, 0, 23, 45];
+			document.getElementById("demo").innerHTML = points;
+
+			function myFunction() {
+				points.sort(function(a, b) {
+					return a - b
+				});
+				document.getElementById("demo").innerHTML = points;
+			}
+		</script> -->
+		
+		
+		<!-- 查找数组中的最大值 -->
+		<!-- <h1>javascript数组排序</h1>
+		<p>最高值是：<span id="demo"></span></p>
+		<script type="text/javascript">
+			var points = [40,100,1,5,25,10];
+			document.getElementById("demo").innerHTML=myArrayMax(points);
+			function myArrayMax(arr){
+				return Math.max.apply(null,arr);
+			}
+		</script> -->
+		
+		
+		<!-- 数组排序找到最小值 -->
+		<!-- <h1>JavaScript数组排序</h1>
+		<p>最低值是;<span id="demo"></span></p>
+		<script type="text/javascript">
+			var points = [40,100,1,5,25,10];
+			document.getElementById("demo").innerHTML=myArrayMin(points);
+			function myArrayMin(arr){
+				var len=arr.length;
+				var min= Infinity;
+				while(len--){
+					if(arr[len]<min){
+						min=arr[len];
+					}
+				}
+				return min;
+			}
+			
+		</script> -->
+		
+		
+		<!-- 数组迭代方法创建新数组 -->
+		<!-- <h1>JavaScript Array.filter()</h1>
+		<p>使用通过所有测试的数组元素创建一个新数组。</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var numbers = [45,4,9,16,25];
+			var over18=numbers.filter(myFunction);
+			document.getElementById("demo").innerHTML=over18;
+			function myFunction(value,index,array){
+				return value >18;
+			}
+		</script> -->
+		
+		<!-- 确定数组元素的数字总和 -->
+		<!-- <p>JavaScript Array.reduce()</p>
+		<p>此例确定数组中所有数字的总和</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var numbers = [45,4,9,16,25];
+			var sum = numbers.reduce(myFunction);
+			document.getElementById("demo").innerHTML="总和是："+sum;
+			function myFunction(total,value,index,array){
+				return total+value;
+			}
+		</script> -->
+		
+		<!-- 检查所有数组值是否大于 18 -->
+		<!-- <p>JavaScript Array.every()</p>
+		<p>every() 方法检查所有数组值是否大于18</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var numbers = [45,4,9,16,25];
+			var over18 = numbers.every(myFunction);
+			document.getElementById("demo").innerHTML=over18;
+				function myFunction(value,index,array){
+					return value>18;
+				}
+			
+		</script> -->
+		
+		<!-- 搜索元素在数组中的位置 -->
+		<!-- <h1>JavaScript Array.indexOf()</h1>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var fruits = ["Apple","Orange","Apple","Mango"];
+			var a= fruits.indexOf("Apple");
+			document.getElementById("demo").innerHTML="Apple 被找到的位置为："+(a+1);
+		</script> -->
+		
+		
+		<!-- 找到数组中大于18的第一个元素 -->
+		<h1>JavaScript Array.find()</h1>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var ele = [12,15,18,34,79];
+			var first = ele.find(myFunction);
+			document.getElementById("demo").innerHTML="被找到大于18的第一个数为："+first;
+			function myFunction(value,index,array){
+				return value>18;
+			}
+		</script>
+	</body>
+</html>

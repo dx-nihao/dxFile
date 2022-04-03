@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片字体练习</title>
+		<link rel="stylesheet" type="text/css" href="./css/all.css"/>
+	</head>
+	<style type="text/css">
+		li{
+			list-style: none;
+		}
+		
+		/* 设置字体样式
+		 fab:
+		 font-family: 'Font Awesome 5 Brands';
+		 fas:
+		 font-family: 'Font Awesome 5 Free';
+		 font-weight: 900;
+		 */
+		li::before{
+			content: '\f0a4';
+			/* font-family: 'Font Awesome 5 Brands'; */
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			color: #0000FF;
+			margin-right: 10px;
+		}
+	</style>
+	<body>
+		
+		<!-- 使用iconfont是用class进行引用 fas/fab开头 -->
+		<i class="fas fa-couch" style="font-size: 100px;color: #008000;"></i>
+		<i class="fas fa-tree" style="font-size: 100px;color: #008000;"></i>
+		<i class="fas fa-battery-three-quarters" style="color: gray;"></i>
+		<ul>
+			<li>锄禾日当午</li>
+			<li>汗滴禾下土</li>
+			<li>谁知盘中餐</li>
+			<li>粒粒皆辛苦</li>
+		</ul>
+	</body>
+</html>

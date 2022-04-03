@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 逻辑运算符 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			var x=6;
+			var y=3;
+			document.getElementById("demo").innerHTML=(x<10&&y>1)+"<br>"
+			+(x<10&&y<1);
+		</script> -->
+
+		<!-- 条件三元运算符 -->
+		<!-- <p>输入你的年龄然后点击这个按钮</p>
+		<input id="age" value="18" />
+		<button onclick="myFunction()">试一试</button>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			function myFunction(){
+				var age,voteable;
+				age=document.getElementById("age").value;
+				voteable =(age<18)?"好年轻":"好成熟";
+				document.getElementById("demo").innerHTML=voteable;
+			}
+		</script> -->
+
+
+		<!-- 条件语句 -->
+		<!-- <p>“如果时间小于18:00就显示美好的一天！”</p>
+		<p id="demo">晚安</p>
+		<script type="text/javascript">
+			if(new Date().getHours()<18){
+				document.getElementById("demo").innerHTML="美好的一天！";
+			}
+		</script> -->
+
+
+		<!-- 条件语句中if-else练习 -->
+		<!-- <p>单击按钮以显示基于时间的问候语</p>
+		<button onclick="myFunction()">试一试</button>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			function myFunction(){
+				var greeting;
+				var time=new Date().getHours();
+				if(time<10){
+					greeting="早安";
+				}else if(time <20){
+					greeting="午安";
+				}else{
+					greeting="晚安";
+				}
+				document.getElementById("demo").innerHTML=greeting;
+			}
+		</script> -->
+
+
+		<!-- switch语句练习 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			var day;
+			switch(new Date().getDay()){
+				case 0:
+				day = "周日";
+				break;
+				case 1:
+				day = "周一";
+				break;
+				case 2:
+				day = "周二";
+				break;
+				case 3:
+				day = "周三";
+				break;
+				case 4:
+				day = "周四";
+				break;
+				case 5:
+				day = "周五";
+				break;
+				case 6:
+				day = "周六";
+			}
+			document.getElementById("demo").innerHTML="今天是"+day;
+		</script> -->
+
+
+		<!-- for循环测试   for/in语句循环遍历对象的属性 -->
+		<!-- <h1>javascript 循环</h1>
+		<p>for/in属性循环遍历对象的属性</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var txt="";
+			var person = {fname:"Bill",lnname:"Gates",age:62};
+			var x;
+			for (x in person) {
+				txt+=person[x]+" ";
+			}
+			document.getElementById("demo").innerHTML=txt;
+		</script>
+		 -->
+
+		<!-- while循环测试 -->
+		<!-- <p id="demo"></p>
+		 <script type="text/javascript">
+		 	var cars=["BMM","Volvo","Porsche","Ford"];
+			var i=0;
+			var txt="";
+			while(cars[i]){
+				txt+=cars[i]+"</br>";
+				i++;
+			}
+			document.getElementById("demo").innerHTML=txt;
+		 </script> -->
+
+
+		<!-- continue语句测试 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			var text = "";
+			for (var i = 0; i < 10; i++) {
+				if(i==3){continue};
+				text+="The number is:"+i+"</br>";
+			}
+			document.getElementById("demo").innerHTML=text;
+		</script> -->
+
+
+		<!-- javascript标签 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			var cars=["BMM","Volvo","Porsche","Ford"];
+			var text="";
+			list: {
+				text+=cars[0]+"</br>";
+				text+=cars[1]+"</br>";
+				break list;
+				text+=cars[2]+"</br>";
+				text+=cars[3]+"</br>";
+				
+			}
+			document.getElementById("demo").innerHTML=text;
+		</script>
+		 -->
+
+		<!-- javascript类型转换 Number() 转换数值，String() 转换字符串，Boolean() 转换布尔值。-->
+
+		<!-- 将十进制转换成二进制 -->
+		<!-- <p id="demo"></p>
+		 <script type="text/javascript">
+		 	document.getElementById("demo").innerHTML=dec2bin(-5);
+			function dec2bin(dec){
+				return (dec>>>0).toString(2);
+			}
+		 </script> -->
+
+
+		<!-- 将二进制转换为十进制 -->
+		<!-- <p id="demo"></p>
+		 <script type="text/javascript">
+		 	document.getElementById("demo").innerHTML=bin2dec(101);
+		 			function bin2dec(bin){
+		 				return parseInt(bin,2).toString(10);
+		 			}
+		 </script> -->
+
+		<!-- JavaScript字符串方法 -->
+		<!-- <p id="demo"></p>
+		 <script type="text/javascript">
+		 	var str ="Visit W3school";
+			var n=str.search("W3school");
+			document.getElementById("demo").innerHTML=n;
+		 </script> -->
+
+
+		<!-- javascript正则表达式 -->
+		<!-- <p>将Microsoft替换为W3school</p>
+		 <button onclick="myFunction()">试一试</button>
+		 <p id="demo">Please visit Miscrosoft and Miscrosoft</p>
+		 <script type="text/javascript">
+		 	function myFunction(){
+				var str=document.getElementById("demo").innerHTML;
+				var txt=str.replace(/miscrosoft/i,"W3school");//不区分大小写
+				document.getElementById("demo").innerHTML=txt;
+			}
+		 </script> -->
+
+		<!-- 对字符串进行全局查找 -->
+		<!-- <p>请单击按钮，在字符串中对“is”进行全局搜索</p>
+			<p id="demo"></p>
+			<button onclick="myFunction()">试一试</button>
+			<script type="text/javascript">
+				function myFunction(){
+					var str="Is this all there is";
+					var patt1=/is/g;
+					var result=str.match(patt1);
+					document.getElementById("demo").innerHTML=result;
+				}
+			</script> -->
+
+
+		<!-- 用异常来进行输入验证 -->
+		<!-- <p>请输入5~10之间的数字</p>
+		<input id="demo" type="text" />
+		<button type="button" onclick="myFunction()">检测输入</button>
+		<p id="p01"></p>
+		<script>
+			function myFunction() {
+				var message, x;
+				message = document.getElementById("p01");
+				message.innerHTML = "";
+				x = document.getElementById("demo").value;
+				try {
+					if (x == "") throw "是空的";
+					if (isNaN(x)) throw "不是数字";
+					x = Number(x);
+					if (x < 5) throw "太小";
+					if (x > 10) throw "太大";
+				} catch (err) {
+					message.innerHTML = "输入：" + err;
+				}
+			}
+		</script> -->
+		
+		<!-- 范围异常 -->
+		<!-- <h1>JavaScript异常</h1>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var num = 1;
+			try{
+				num.Toprecision(488);
+			}catch(err){
+				document.getElementById("demo").innerHTML=err.name;
+			}
+		</script> -->
+		
+		<!-- 使用尚未声明的变量会抛出引用错误 -->
+		<!-- <p>不能使用不存在变量的值</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var x;
+			try{
+				x=y+1;
+			}catch(err){
+				document.getElementById("demo").innerHTML=err.name;
+			}
+		</script> -->
+		
+		
+		<!-- 语法错误 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			try{
+				eval("alert('Hello)");//缺失引号
+			}catch(err){
+				document.getElementById("demo").innerHTML=err.name;
+			}
+		</script> -->
+		
+		
+		<!-- 类型错误 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			var num = 1;
+			try{
+				num.toUpperCase();
+			}catch(err){
+				document.getElementById("demo").innerHTML=err.name;
+			}
+		</script> -->
+		
+		<!-- URI错误 -->
+		<!-- <p>使用decodeURI（）无法解析某些编码</p>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			try{
+				decodeURI("%%%"); 
+			}catch(err){
+				document.getElementById("demo").innerHTML=err.name;
+			}
+		</script> -->
+		
+		
+		<!-- 可以在声明变量前使用它 -->
+		<!-- <p id="demo"></p>
+		<script type="text/javascript">
+			x=5;
+			document.getElementById("demo").innerHTML=x;
+			var x;
+		</script> -->
+		
+		
+		
+	</body>
+</html>

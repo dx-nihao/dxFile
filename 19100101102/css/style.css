@@ -1,0 +1,535 @@
+
+body {
+  font-size: 12px;
+ 
+  color: #666666;
+}
+.login {
+  height: 29px;
+ 
+  background: #f7f7f7;
+ 
+  border-bottom: 1px solid #dddddd;
+}
+
+.loginbox {
+  width: 1200px;
+ 
+  height: 29px;
+ 
+  margin: 0 auto;
+}
+ 
+.loginbox h3 {
+  line-height: 29px;
+ 
+  float: left;
+}
+ 
+.loginrg {
+  width: 290px;
+ 
+  height: 29px;
+ 
+  line-height: 29px;
+ 
+  float: right;
+}
+ 
+.inlogin {
+  float: left;
+}
+ 
+.unlogin {
+  display: none;
+}
+ 
+.inlogin a {
+  color: orange;
+}
+ 
+.unlogin span,
+.mylogin span {
+  margin: 0 10px;
+}
+ 
+.unlogin a,
+.mylogin a {
+  color: #666666;
+}
+ 
+.unlogin a:hover,
+.mylogin a:hover {
+  color: orange;
+}
+
+.search {
+  height: 90px;
+}
+ 
+.searchbox {
+  width: 1200px;
+ 
+  height: 90px;
+ 
+  margin: 0 auto;
+
+}
+
+.searchbox a {
+  margin-left: 17px;
+ 
+  margin-top: 29px;
+
+  float: left;
+}
+ 
+.searchcar {
+  width: 616px;
+ 
+  height: 38px;
+ 
+  border: 1px solid #37ab40;
+ 
+  margin-left: 120px;
+ 
+  margin-top: 36px;
+ 
+ 
+  float: left;
+}
+
+.searchcar .txt {
+  width: 516px;
+ 
+  height: 38px;
+ 
+  line-height: 38px;
+ 
+  background: url(../img/search.png) no-repeat 12px 9px;
+ 
+  text-indent: 40px;
+}
+ 
+.searchcar .sub {
+  width: 100px;
+ 
+  height: 39px;
+ 
+  background: #37ab40;
+ 
+  font-size: 14px;
+ 
+  color: white;
+ 
+  line-height: 39px;
+ 
+  float: right;
+}
+ 
+.buy {
+  width: 200px;
+ 
+  height: 40px;
+ 
+  float: right;
+ 
+  margin-top: 36px;
+ 
+}
+
+.buy a {
+
+  float: left;
+ 
+  width: 158px;
+ 
+  height: 38px;
+ 
+  border: 1px solid #dddddd;
+ 
+  margin-top: 0;
+ 
+  margin-left: 0;
+ 
+  color: #37ab40;
+ 
+  font-size: 14px;
+ 
+  line-height: 38px;
+ 
+  background: url(../img/buycar.png) no-repeat 14px 10px;
+ 
+  text-indent: 56px;
+
+}
+
+ 
+.buy span {
+
+ 
+  float: right;
+ 
+  width: 40px;
+ 
+  height: 40px;
+ 
+  background: #ff8800;
+ 
+  font-size: 18px;
+ 
+  color: white;
+ 
+  line-height: 40px;
+ 
+  text-align: center;
+
+}
+ 
+
+ 
+.cate {
+  height: 40px;
+ 
+  margin-top: 26px;
+ 
+  border-bottom: 2px solid #37ab40;
+}
+
+ 
+.catecon {
+  width: 1200px;
+ 
+  height: 40px;
+ 
+  margin: 0 auto;
+}
+ 
+.all {
+  width: 200px;
+ 
+  height: 40px;
+ 
+  line-height: 40px;
+ 
+  text-align: center;
+ 
+  font-size: 14px;
+ 
+  color: white;
+ 
+  background: #37ab40;
+ 
+
+ 
+  float: left;
+}
+ 
+ 
+.catelist {
+  width: 215px;
+ 
+  height: 40px;
+ 
+  line-height: 40px;
+ 
+  margin-left: 35px;
+ 
+  float: left;
+}
+ 
+.catelist li {
+  float: left;
+}
+
+ 
+.catelist span {
+  margin: 0 20px;
+}
+ 
+.catelist a {
+  color: #666666;
+}
+
+ 
+.slide {
+  height: 270px;
+}
+ 
+.slidecon {
+  width: 1200px;
+ 
+  height: 270px;
+ 
+  margin: 0 auto;
+}
+
+.flist {
+  width: 200px;
+ 
+  height: 270px;
+ 
+ 
+  float: left;
+}
+
+ 
+.flist li {
+  width: 198px;
+ 
+  height: 44px;
+ 
+  border: 1px solid #f7f7f7;
+ 
+  border-top: 0;
+ 
+  line-height: 44px;
+ 
+  text-align: center;
+ 
+  background: url(images/sprite.png) no-repeat 33px 9px;
+}
+ 
+ 
+.flist li:nth-child(2) {
+  background-position-y: -41px;
+}
+ 
+.flist li:nth-child(3) {
+  background-position-y: -91px;
+}
+ 
+.flist li:nth-child(4) {
+  background-position-y: -141px;
+}
+ 
+.flist li:nth-child(5) {
+  background-position-y: -191px;
+}
+ 
+.flist li:nth-child(6) {
+  background-position-y: -241px;
+}
+ 
+ 
+.flist a {
+  font-size: 14px;
+ 
+  background: url(images/sprite.png) no-repeat 170px -291px;
+
+ 
+  float: right;
+ 
+  width: 198px;
+ 
+  height: 44px;
+}
+ 
+ 
+.slidepic {
+  width: 760px;
+ 
+  height: 279px;
+ 
+  float: left;
+ 
+  overflow: hidden;
+ 
+  position: relative;
+}
+ 
+ 
+.slist {
+  width: 3040px;
+ 
+  height: 270px;
+}
+ 
+.slist li {
+  float: left;
+}
+
+ 
+.lfbtu {
+  width: 25px;
+ 
+  height: 25px;
+ 
+  background: url(images/sprite.png) no-repeat 0px -350px;
+ 
+  position: absolute;
+ 
+  bottom: 123px;
+ 
+  left: 12px;
+ 
+  cursor: pointer;
+}
+ 
+.rgbtu {
+  width: 25px;
+ 
+  height: 25px;
+ 
+  background: url(images/sprite.png) no-repeat 0px -400px;
+ 
+  position: absolute;
+ 
+  bottom: 123px;
+ 
+  right: 12px;
+ 
+  cursor: pointer;
+}
+ 
+
+ 
+.rd {
+  height: 11px;
+
+  width: 760px;
+ 
+  position: absolute;
+ 
+  bottom: 19px;
+ 
+  left: 0;
+ 
+  text-align: center;
+}
+ 
+.rd li {
+  width: 11px;
+ 
+  height: 11px;
+
+ 
+  border-radius: 50%;
+
+
+ 
+  display: inline-block;
+}
+ 
+.active {
+  background: greenyellow;
+}
+ 
+
+ 
+.rgpic {
+  font-size: 0px;
+}
+
+.foods {
+  height: 335px;
+ 
+  margin-top: 25px;
+}
+ 
+.foodscon {
+  width: 1200px;
+ 
+  height: 335px;
+ 
+  margin: 0 auto;
+}
+ 
+
+ 
+.fhead {
+  width: 1200px;
+ 
+  height: 29px;
+ 
+  border-bottom: 2px solid #37ab40;
+}
+ 
+ 
+.fheada {
+  font-size: 16px;
+ 
+  margin-right: 20px;
+ 
+  color: #37ab40;
+ 
+  font-weight: bold;
+ 
+  float: left;
+}
+
+ 
+.fheadlist li {
+  height: 29px;
+ 
+  line-height: 29px;
+ 
+  float: left;
+ 
+  margin-left: 10px;
+}
+ 
+
+ 
+.fheadlista {
+  height: 29px;
+ 
+  line-height: 29px;
+ 
+  float: right;
+}
+ 
+
+ 
+.lfad {
+  width: 200px;
+ 
+  height: 300px;
+ 
+  float: left;
+}
+ 
+.foodslist {
+  width: 1000px;
+ 
+  height: 300px;
+ 
+  float: left;
+}
+
+.foodslist li {
+  width: 249px;
+ 
+  height: 299px;
+ 
+  border-bottom: 1px solid #666666;
+ 
+  border-right: 1px solid #666666;
+ 
+  text-align: center;
+ 
+  float: left;
+}
+.foodslist h5 {
+  font-size: 14px;
+ 
+  height: 50px;
+ 
+  line-height: 50px;
+ 
+  margin-bottom: 10px;
+}
+ 
+.foodslist div {
+  font-size: 20px;
+ 
+  color: red;
+ 
+  font-weight: bold;
+ 
+  height: 35px;
+ 
+  line-height: 35px;
+ 
+  margin-top: 17px;
+}

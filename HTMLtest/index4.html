@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>text-dectortion</title>
+		<link rel="stylesheet" type="text/css" href="./decoration.css"/>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+				/* 去掉超链接下划线 */
+			}
+			
+			
+			h1{text-decoration: overline;}
+			h2{text-decoration: line-through;}
+			h3{text-decoration: underline;}	
+			/* 装饰线的·位置 */
+			
+			
+			h4{letter-spacing: 2px;}
+			h5{letter-spacing: -3px;}
+			/* 字符间距 */
+			
+			.outline{text-align: center;}
+			.date{text-align: right;}
+			.main{text-align: justify;}
+			/*(使用类别选择器) 对齐方式 */
+			
+			
+			#one{font-size: 0.75rem;}
+			#two{font-size: 1.5rem;}
+			/* ID选择器 */
+			
+			
+			p span{
+				color: red;
+			}
+			/* 嵌套声明 */
+			
+			
+			h1,p{ text-align: center;}
+			/* 集体声明 */
+			
+			/* *{
+				text-align: center;
+			}
+			/* 全局声明 */ */
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">链接1</a></li>
+			<li><a href="#">链接2</a></li>
+			<li><a href="#">链接3</a></li>
+			
+			<h1>标题1文字</h1>
+			<h2>标题2文字</h2>
+			<h3>标题3文字</h3>
+			
+			<h4>标题内容</h4>
+			<h5>文本段落主要内容</h5>、
+			
+			<h1 class="outline">CSS text-align 实例</h1>
+			<p class="date">3月14号</p>
+			<p class="main">当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变
+			这个世界我将目光缩短了些，决定只改变我的国家</p>
+			
+			<p id="one">文字1</p>
+			<p id="two">文字2</p>
+			<p><span>天使投资</span>是投资方式的一种</p>
+			
+			<h1>欢迎访问论坛</h1>
+			<p>欢迎访问论坛</p>
+			
+			<h2>欢迎访问论坛</h2>
+			<p>欢迎访问论坛</p>
+		</ul>
+	</body>
+</html>

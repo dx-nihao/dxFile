@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>全高垂直固定导航栏</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 25%;
+				background-color: #f1f1f1;
+				position: fixed;
+				height: 100%;
+				overflow: auto;
+			}
+			li a{
+				display: block;
+				color: #000;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			li a.active{
+				background-color: #4caf50;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+		<div style="margin-left: 25%;padding: 1px 16px;height: 1000px;">
+			<h1>全高的固定侧导航栏</h1>
+			<h2>请尝试滚动此区域，并查看sidenav如何粘在页面上</h2>
+			<p>请注意，此div的左外边距为25%,这是因为侧导航栏被设置为25%宽。如果删除这个外边距，则sidenav
+			将叠加到该nav上。</p>
+			<p>还要注意，我们以为sidenav设置overflow：auto。如果sidenav太长时（例如其中有超过50个链接）
+			，会添加滚动条</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+			<p>Some text..</p>
+		</div>
+	</body>
+</html>

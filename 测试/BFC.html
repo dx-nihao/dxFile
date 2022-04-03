@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>高度塌陷和BFC</title>
+	</head>
+	<style type="text/css">
+		.outer{
+			border: 10px solid red;
+			overflow: hidden;
+			/* 使用overflow：auto也可以实现防止告诉塌陷 */
+		}
+		.inner{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			float: left;
+		}
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: #0000FF;
+			overflow: hidden;/*开启了元素的bfc*/
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: #008000;
+			margin-top: 100px;
+			
+		}
+		
+	</style>
+	<body>
+		<!-- <div class="outer">
+			<div class="inner">
+				
+			</div>
+		</div>
+		<div style="width: 200px;height: 200px;background-color: yellow;">
+			
+		</div> -->
+		
+		
+		<div class="box1">
+		<div class="box2">
+			
+		</div>	
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>响应式图库</title>
+		<style type="text/css">
+			div.scenery{
+				border: 1px solid #ccc;
+			}
+			div.scenery:hover{
+				border: 1px solid #777;
+			}
+			div.scenery img{
+				width: 100%;
+				height: auto;
+			}
+			div.desc{
+				padding: 15px;
+				text-align: center;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			.responsive{
+				padding: 0 6px;
+				float: left;
+				width: 24.99999%;
+			}
+			@media only screen and (max-width: 700px) {
+				.responsive{
+					width: 49.99999%;
+					margin: 6px 0;
+				}
+				@media only screen and (max-width: 500px) {
+					.responsive{
+						width: 100%;
+					}
+				}
+				.clearfix::after{
+					content: "";
+					display: table;
+					clear: both;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>响应式图库</h1>
+		<h2>请调整窗口大小来查看效果</h2>
+		
+		<div class="responsive">
+			<div class="scenery">
+				<a target="_blank" href="../img/景色.jpg">
+					<img src="../img/景色.jpg"  alt="景色" height="600" height="400">
+				</a>
+			</div>
+			<div class="desc">
+				在此处添加图像描述
+			</div>
+		</div>
+		
+		<div class="responsive">
+			<div class="scenery">
+				<a target="_blank" href="../img/景色.jpg">
+					<img src="../img/景色.jpg"  alt="景色" height="600" height="400">
+				</a>
+			</div>
+			<div class="desc">
+				在此处添加图像描述
+			</div>
+		</div>
+		
+		<div class="responsive">
+			<div class="scenery">
+				<a target="_blank" href="../img/景色.jpg">
+					<img src="../img/景色.jpg"  alt="景色" height="600" height="400">
+				</a>
+			</div>
+			<div class="desc">
+				在此处添加图像描述
+			</div>
+		</div>
+		
+		<div class="responsive">
+			<div class="scenery">
+				<a target="_blank" href="../img/景色.jpg">
+					<img src="../img/景色.jpg"  alt="景色" height="600" height="400">
+				</a>
+			</div>
+			<div class="desc">
+				在此处添加图像描述
+			</div>
+		</div>
+		<div style="padding:6px;">
+		  <p>本例使用媒体查询来重新排列不同屏幕尺寸的图像：对于宽于 700 像素的屏幕，
+		  它将并排显示四幅图像；对于小于 700 像素的屏幕，将并排显示两幅图像。
+		  对于小于 500 像素的屏幕，图像将垂直堆叠（100％）。
+		  </p>
+		  <p>您稍后将在我们的 CSS 教程中学到有关媒体查询和响应式 Web 设计的更多知识。</p>
+		</div>
+	</body>
+</html>
